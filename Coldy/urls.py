@@ -22,4 +22,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('add_location/', LocationApiView.as_view(),name="LocationApiView"),  
     path('update_location/<int:pk>', UpdateLocationApiView.as_view(),name="UpdateLocationApiView"),  
+    path('add_customer/', CustomerApiView.as_view(),name="customerApiView"),  
+    path('update_customer/<int:pk>', UpdateCustomerApiView.as_view(),name="UpdatecustomerApiView"),  
+    path('add_product/', ProductApiView.as_view(),name="ProductApiView"),  
+    path('update_product/<int:pk>', UpdateProductApiView.as_view(),name="UpdateProductApiView"),  
+    path('add_Orders/', OrdersApiView.as_view(),name="OrdersApiView"),  
+    path('update_Orders/<int:pk>', UpdateOrdersApiView.as_view(),name="UpdateOrdersApiView"),  
 ]
